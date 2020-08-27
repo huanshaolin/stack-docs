@@ -112,12 +112,12 @@ services:
       ELASTICSEARCH_URL: https://es01:9200
       ELASTICSEARCH_HOSTS: https://es01:9200
       ELASTICSEARCH_USERNAME: kibana_system
-      ELASTICSEARCH_PASSWORD: ALZ8jSWzj8LyODnV6t3v
+      ELASTICSEARCH_PASSWORD: dU4hhmVkI9ndoFkhnBIm
       ELASTICSEARCH_SSL_CERTIFICATEAUTHORITIES: $CERTS_DIR/ca/ca.crt
       SERVER_SSL_ENABLED: "true"
       SERVER_SSL_KEY: $CERTS_DIR/kib01/kib01.key
       SERVER_SSL_CERTIFICATE: $CERTS_DIR/kib01/kib01.crt
-      xpack.encryptedSavedObjects.encryptionKey: RLc1uJ1O7M4QZ4v4dteSu682TFkwTjUkOlRRBn0Y
+      - xpack.encryptedSavedObjects.encryptionKey=RLc1uJ1O7M4QZ4v4dteSu682TFkwTjUkOlRRBn0Y
     volumes: 
       - certs:$CERTS_DIR
     networks:
