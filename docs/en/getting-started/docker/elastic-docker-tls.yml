@@ -117,6 +117,7 @@ services:
       SERVER_SSL_ENABLED: "true"
       SERVER_SSL_KEY: $CERTS_DIR/kib01/kib01.key
       SERVER_SSL_CERTIFICATE: $CERTS_DIR/kib01/kib01.crt
+      xpack.encryptedSavedObjects.encryptionKey: RLc1uJ1O7M4QZ4v4dteSu682TFkwTjUkOlRRBn0Y
     volumes: 
       - certs:$CERTS_DIR
     networks:
